@@ -62,8 +62,6 @@ public class Deepl {
 				JSONArray array = (JSONArray) content.get("translations");
 				JSONObject json = (JSONObject) array.get(0);
 
-				System.out.println(json);
-
 				value = new String[]{json.get("text").toString(), "1"};
 			}
 
